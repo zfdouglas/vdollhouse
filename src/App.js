@@ -4,10 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar/NavBar";
 import { ThemeProvider } from "@mui/material";
 import theme from "./Common/ThemeProvider";
+import HomeScreen from "./screens/HomeScreen";
 function App() {
-  const Home = () => {
-    return <h1>Home</h1>;
-  };
   const About = () => {
     return <h1>About</h1>;
   };
@@ -23,7 +21,7 @@ function App() {
         <BrowserRouter>
           <NavBar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomeScreen />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<Error />} />
