@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography/Typography";
 import { NavLink } from "react-router-dom";
 import Button from "@mui/material/Button/Button";
 import NavItem from "./NavItem";
+import logo from "../Common/assets/logowhite.png";
 
 const NavBar = () => {
   let activeClassName = "nav-active";
@@ -45,7 +46,8 @@ const NavBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <NavItem url="" isActive={true}>
+          <img src={logo} style={{ height: "2em", margin: "1em" }} />
+          <NavItem url={"/"} isActive={true}>
             <Typography
               variant="h6"
               noWrap
@@ -124,6 +126,7 @@ const NavBar = () => {
               {pages.map((page) => (
                 <NavLink
                   to={page.url}
+                  style={{ textDecoration: "none" }}
                   className={({ isActive }) =>
                     isActive ? activeClassName : undefined
                   }
@@ -131,7 +134,14 @@ const NavBar = () => {
                   <Button
                     key={page.name}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
+                    sx={{
+                      my: 2,
+                      color: "white",
+                      fontWeight: 500,
+                      fontSize: "1em",
+                      display: "block",
+                      textDecoration: "none",
+                    }}
                   >
                     {page.name}
                   </Button>
