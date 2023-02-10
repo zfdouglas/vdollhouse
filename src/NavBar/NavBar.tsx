@@ -12,7 +12,8 @@ import Typography from "@mui/material/Typography/Typography";
 import { NavLink } from "react-router-dom";
 import Button from "@mui/material/Button/Button";
 import NavItem from "./NavItem";
-import logo from "../Common/assets/logowhite.png";
+import logo from "../Common/assets/logogreen.png";
+import theme from "../Common/ThemeProvider";
 
 const NavBar = () => {
   let activeClassName = "nav-active";
@@ -43,7 +44,15 @@ const NavBar = () => {
     setAnchorElUser(null);
   };
   return (
-    <AppBar position="static">
+    <AppBar
+      style={{
+        backgroundColor: "transparent",
+        position: "absolute",
+        zIndex: "10",
+        boxShadow: "none",
+      }}
+      position="static"
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img src={logo} style={{ height: "2em", margin: "1em" }} />
@@ -58,7 +67,7 @@ const NavBar = () => {
                 fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
-                color: "inherit",
+                color: "white",
                 textDecoration: "none",
               }}
             >
@@ -72,7 +81,7 @@ const NavBar = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="primary"
             >
               <MenuIcon />
             </IconButton>
@@ -115,7 +124,7 @@ const NavBar = () => {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "primary",
               textDecoration: "none",
             }}
           >
@@ -134,13 +143,18 @@ const NavBar = () => {
                   <Button
                     key={page.name}
                     onClick={handleCloseNavMenu}
+                    className="NavButtons"
                     sx={{
                       my: 2,
+                      marginRight: "2em",
                       color: "white",
-                      fontWeight: 500,
+                      fontWeight: 600,
                       fontSize: "1em",
                       display: "block",
                       textDecoration: "none",
+                      "&:hover": {
+                        color: theme.palette.primary.main,
+                      },
                     }}
                   >
                     {page.name}

@@ -2,9 +2,7 @@ import React from "react";
 
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
 import InteriorShot from "../Common/assets/interior.jpg";
 
 const HeroBanner = () => {
@@ -12,7 +10,7 @@ const HeroBanner = () => {
     position: "relative",
     color: "#fff",
     mb: 4,
-    height: "40vh",
+    height: "66vh",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -31,32 +29,7 @@ const HeroBanner = () => {
   return (
     <Paper sx={paperStyling}>
       <Box sx={heroBoxStyling} />
-      <Grid container>
-        <Grid item md={6}>
-          <Box
-            sx={{
-              position: "relative",
-              p: { xs: 3, md: 6 },
-              pr: { md: 0 },
-            }}
-          >
-            <Typography
-              component="h1"
-              variant="h3"
-              color="inherit"
-              gutterBottom
-            >
-              vDollHouse
-            </Typography>
-            <Typography variant="h5" color="contrast" paragraph>
-              Your home, visualized
-            </Typography>
-            <Link variant="subtitle1" href="#">
-              Learn More
-            </Link>
-          </Box>
-        </Grid>
-      </Grid>
+      <Grid container></Grid>
     </Paper>
   );
 };
