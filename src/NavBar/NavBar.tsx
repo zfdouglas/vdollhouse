@@ -14,6 +14,7 @@ import Button from "@mui/material/Button/Button";
 import NavItem from "./NavItem";
 import logo from "../Common/assets/logogreen.png";
 import theme from "../Common/ThemeProvider";
+import "./NavBar.css";
 
 const NavBar = () => {
   let activeClassName = "nav-active";
@@ -73,20 +74,21 @@ const NavBar = () => {
               vDollhouse
             </Typography>
           </NavItem>
+
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="primary"
             >
-              <MenuIcon />
+              <MenuIcon style={{ color: "white" }} />
             </IconButton>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
+              variant="menu"
               anchorOrigin={{
                 vertical: "bottom",
                 horizontal: "left",
@@ -105,7 +107,12 @@ const NavBar = () => {
               {pages.map((page) => (
                 <NavItem url={page.url} isActive={true}>
                   <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page.url}</Typography>
+                    <Typography
+                      style={{ color: theme.palette.primary.main }}
+                      textAlign="center"
+                    >
+                      {page.url}
+                    </Typography>
                   </MenuItem>
                 </NavItem>
               ))}
@@ -117,12 +124,12 @@ const NavBar = () => {
             component="a"
             href=""
             sx={{
-              mr: 2,
+              justifyContent: "right",
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontWeight: 700,
+              fontWeight: 600,
               letterSpacing: ".3rem",
-              color: "primary",
+              color: "white",
               textDecoration: "none",
             }}
           >
