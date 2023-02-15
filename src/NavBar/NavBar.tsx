@@ -15,6 +15,8 @@ import NavItem from "./NavItem";
 import logo from "../Common/assets/logogreen.png";
 import theme from "../Common/ThemeProvider";
 import "./NavBar.css";
+import Grid from "@mui/material/Grid";
+import MobileNav from "./MobileNav";
 
 const NavBar = () => {
   let activeClassName = "nav-active";
@@ -23,27 +25,7 @@ const NavBar = () => {
     { name: "About", url: "about" },
     { name: "Contact", url: "contact" },
   ];
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null
-  );
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-    null
-  );
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
   return (
     <AppBar
       style={{
@@ -55,17 +37,23 @@ const NavBar = () => {
       position="static"
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <img src={logo} style={{ height: "2em", margin: "1em" }} />
-          <NavItem url={"/"} isActive={true}>
+        <Toolbar
+          disableGutters
+          style={{ display: "flex", justifyContent: "space-between" }}
+        >
+          <div>
+            <IconButton edge="start">
+              <img src={logo} style={{ height: "2em", margin: ".2em" }} />
+            </IconButton>
             <Typography
-              variant="h6"
+              variant="h5"
               noWrap
               component="a"
+              href=""
               sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontWeight: 700,
+                display: { xs: "none", md: "inline" },
+                flexGrow: 1,
+                fontWeight: 600,
                 letterSpacing: ".3rem",
                 color: "white",
                 textDecoration: "none",
@@ -73,100 +61,43 @@ const NavBar = () => {
             >
               vDollhouse
             </Typography>
-          </NavItem>
+          </div>
+          <MobileNav />
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="primary"
-            >
-              <MenuIcon style={{ color: "white" }} />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              variant="menu"
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <NavItem url={page.url} isActive={true}>
-                  <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                    <Typography
-                      style={{ color: theme.palette.primary.main }}
-                      textAlign="center"
-                    >
-                      {page.url}
-                    </Typography>
-                  </MenuItem>
-                </NavItem>
-              ))}
-            </Menu>
-          </Box>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              justifyContent: "right",
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontWeight: 600,
-              letterSpacing: ".3rem",
-              color: "white",
-              textDecoration: "none",
-            }}
-          >
-            vDollhouse
-          </Typography>
           <nav>
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              {pages.map((page) => (
-                <NavLink
-                  to={page.url}
-                  style={{ textDecoration: "none" }}
-                  className={({ isActive }) =>
-                    isActive ? activeClassName : undefined
-                  }
-                >
-                  <Button
-                    key={page.name}
-                    onClick={handleCloseNavMenu}
-                    className="NavButtons"
-                    sx={{
-                      my: 2,
-                      marginRight: "2em",
-                      color: "white",
-                      fontWeight: 600,
-                      fontSize: "1em",
-                      display: "block",
-                      textDecoration: "none",
-                      "&:hover": {
-                        color: theme.palette.primary.main,
-                      },
-                    }}
+            <Grid>
+              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+                {pages.map((page) => (
+                  <NavLink
+                    to={page.url}
+                    style={{ textDecoration: "none" }}
+                    className={({ isActive }) =>
+                      isActive ? activeClassName : undefined
+                    }
                   >
-                    {page.name}
-                  </Button>
-                </NavLink>
-              ))}
-            </Box>
+                    <Button
+                      key={page.name}
+                      // onClick={handleCloseNavMenu}
+                      className="NavButtons"
+                      sx={{
+                        my: 2,
+                        marginRight: "2em",
+                        color: "white",
+                        fontWeight: 600,
+                        fontSize: "1em",
+                        display: "block",
+                        textDecoration: "none",
+                        "&:hover": {
+                          color: theme.palette.primary.main,
+                        },
+                      }}
+                    >
+                      {page.name}
+                    </Button>
+                  </NavLink>
+                ))}
+              </Box>
+            </Grid>
           </nav>
         </Toolbar>
       </Container>

@@ -44,6 +44,7 @@ const ProcessHolder = () => {
           flexDirection: "row",
           margin: "auto",
           justifyContent: "space-evenly",
+          flexWrap: "wrap",
         }}
       >
         {processes.map((step) => {

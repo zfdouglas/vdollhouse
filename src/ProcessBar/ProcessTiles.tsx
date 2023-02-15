@@ -10,7 +10,12 @@ interface ProcessTileProps {
 }
 const ProcessTile = ({ process, image, blurb }: ProcessTileProps) => {
   return (
-    <Card sx={{ maxWidth: "17%" }}>
+    <Card
+      sx={{
+        width: { xs: "60%", sm: "17%" },
+        marginTop: "1em",
+      }}
+    >
       <CardContent>
         <Typography
           variant="h5"

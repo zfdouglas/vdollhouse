@@ -2,6 +2,7 @@ import React from "react";
 
 import HeroBanner from "../HeroBanner/HeroBanner";
 import ProcessHolder from "../ProcessBar/ProcessHolder";
+import BenefitsBar from "../BenefitsBar/BenefitsBar";
 
 const HomeScreen = () => {
   return (
@@ -10,6 +11,7 @@ const HomeScreen = () => {
         <HeroBanner />
       </div>
       <ProcessHolder />
+      <BenefitsBar />
     </div>
   );
 };
