@@ -5,12 +5,12 @@ import ThemedButton from "../Common/Button/Button";
 import Paper from "@mui/material/Paper";
 import { benefits } from "../Copy/benefits";
 import { minHeight } from "@mui/system";
+import { ContentBar } from "../Common/Blocks/ContentBar";
 const BenefitsBar = () => {
   const [chosenBenefit, setChosenBenefit] = useState(benefits[0]);
 
   return (
-    <div style={{ backgroundColor: "#A1BD69", paddingBottom: "2%" }}>
-      <h1 style={{ color: "white", paddingTop: "3%" }}>Benefits</h1>
+    <ContentBar header="Benefits" headerColor="white" backgroundColor="#A1BD69">
       <div
         style={{
           display: "flex",
@@ -48,7 +48,7 @@ const BenefitsBar = () => {
           style={{ textAlign: "left", padding: "4%" }}
         />
       </Paper>
-    </div>
+    </ContentBar>
   );
 };
 export default BenefitsBar;

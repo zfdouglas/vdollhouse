@@ -3,11 +3,15 @@ import ProcessTile from "./ProcessTiles";
 
 import theme from "../Common/ThemeProvider";
 import { processes } from "../Copy/processes";
+import { ContentBar } from "../Common/Blocks/ContentBar";
 
 const ProcessHolder = () => {
   return (
-    <div>
-      <h1 style={{ color: theme.palette.primary.main }}>The Process</h1>
+    <ContentBar
+      header="The Process"
+      headerColor={theme.palette.primary.main}
+      backgroundColor="none"
+    >
       <div
         style={{
           display: "flex",
@@ -27,7 +31,7 @@ const ProcessHolder = () => {
           );
         })}
       </div>
-    </div>
+    </ContentBar>
   );
 };
 export default ProcessHolder;

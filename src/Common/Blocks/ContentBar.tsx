@@ -1,28 +1,23 @@
 import { Children } from "react";
 import theme from "../ThemeProvider";
-
+import React from "react";
 interface ContentBarProps {
   header: string;
   headerColor: string;
   backgroundColor: string;
-  children: any;
+  children?: any;
 }
 export const ContentBar = (props: ContentBarProps) => {
   const { header, headerColor, backgroundColor, children } = props;
   return (
     <div
-      style={{ backgroundColor: backgroundColor ? backgroundColor : "none" }}
+      style={{
+        backgroundColor: backgroundColor ? backgroundColor : "none",
+        paddingBottom: "2%",
+      }}
     >
-      <h1 style={{ color: headerColor }}>{header}</h1>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          margin: "auto",
-          justifyContent: "space-evenly",
-          flexWrap: "wrap",
-        }}
-      ></div>
+      <h1 style={{ color: headerColor, paddingTop: "2%" }}>{header}</h1>
+
       {children}
     </div>
   );
