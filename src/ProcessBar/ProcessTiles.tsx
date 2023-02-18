@@ -11,6 +11,7 @@ interface ProcessTileProps {
 const ProcessTile = ({ process, image, blurb }: ProcessTileProps) => {
   return (
     <Card
+      elevation={1}
       sx={{
         width: { xs: "60%", sm: "17%" },
         marginTop: "1em",
@@ -25,7 +26,7 @@ const ProcessTile = ({ process, image, blurb }: ProcessTileProps) => {
         >
           {process}
         </Typography>
-        <CardMedia sx={{ height: "60%" }} title="green iguana">
+        <CardMedia sx={{ height: "60%" }} title={process}>
           {image}
         </CardMedia>
         <div>{blurb}</div>
