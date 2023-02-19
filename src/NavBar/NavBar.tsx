@@ -4,14 +4,10 @@ import AppBar from "@mui/material/AppBar/AppBar";
 import Box from "@mui/material/Box/Box";
 import Container from "@mui/material/Container/Container";
 import IconButton from "@mui/material/IconButton/IconButton";
-import Menu from "@mui/material/Menu/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import MenuItem from "@mui/material/MenuItem/MenuItem";
 import Toolbar from "@mui/material/Toolbar/Toolbar";
 import Typography from "@mui/material/Typography/Typography";
 import { NavLink } from "react-router-dom";
 import Button from "@mui/material/Button/Button";
-import NavItem from "./NavItem";
 import logo from "../Common/assets/logogreen.png";
 import theme from "../Common/ThemeProvider";
 import "./NavBar.css";
@@ -41,7 +37,7 @@ const NavBar = () => {
           disableGutters
           style={{ display: "flex", justifyContent: "space-between" }}
         >
-          <div>
+          <div className="Icon">
             <IconButton edge="start">
               <img src={logo} style={{ height: "2em", margin: ".2em" }} />
             </IconButton>

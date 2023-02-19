@@ -9,8 +9,8 @@ const ProcessHolder = () => {
   return (
     <ContentBar
       header="The Process"
-      headerColor={theme.palette.primary.main}
-      backgroundColor="none"
+      headerColor="white"
+      backgroundColor="#A1BD69"
     >
       <div
         style={{

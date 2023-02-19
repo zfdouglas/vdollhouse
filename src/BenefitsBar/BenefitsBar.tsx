@@ -9,8 +9,14 @@ import { ContentBar } from "../Common/Blocks/ContentBar";
 const BenefitsBar = () => {
   const [chosenBenefit, setChosenBenefit] = useState(benefits[0]);
 
+  const buttonOverrideStyle = {
+    backgroundColor: "#A1BD69",
+    padding: "8px 16px",
+    fontWeight: "500",
+    color: "white",
+  };
   return (
-    <ContentBar header="Benefits" headerColor="white" backgroundColor="#A1BD69">
+    <ContentBar header="Benefits" headerColor="#A1BD69" backgroundColor="white">
       <div
         style={{
           display: "flex",
@@ -25,6 +31,7 @@ const BenefitsBar = () => {
           return (
             <ThemedButton
               variant="contained"
+              styleOverride={buttonOverrideStyle}
               active={chosenBenefit.title === person.title ? true : false}
               onClick={() => setChosenBenefit(benefits[index])}
             >
@@ -35,7 +42,6 @@ const BenefitsBar = () => {
       </div>
       <Paper
         elevation={0}
-        variant="outlined"
         style={{
           backgroundColor: "none",
           width: "60%",

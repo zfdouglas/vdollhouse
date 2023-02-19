@@ -16,7 +16,9 @@ export const ContentBar = (props: ContentBarProps) => {
         paddingBottom: "2%",
       }}
     >
-      <h1 style={{ color: headerColor, paddingTop: "2%" }}>{header}</h1>
+      <h1 style={{ color: headerColor, paddingTop: "2%", marginTop: 0 }}>
+        {header}
+      </h1>
 
       {children}
     </div>

@@ -15,6 +15,7 @@ const HeroBanner = () => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundImage: `url(${InteriorShot})`,
+    marginBottom: 0,
   };
 
   const heroBoxStyling = {

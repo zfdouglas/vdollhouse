@@ -5,8 +5,8 @@ export const PricingBar = () => {
   return (
     <ContentBar
       header="Pricing"
-      headerColor={theme.palette.primary.main}
-      backgroundColor="none"
+      headerColor="white"
+      backgroundColor="#A1BD69"
     ></ContentBar>
   );
 };
