@@ -4,6 +4,7 @@ import HeroBanner from "../HeroBanner/HeroBanner";
 import ProcessHolder from "../ProcessBar/ProcessHolder";
 import BenefitsBar from "../BenefitsBar/BenefitsBar";
 import { PricingBar } from "../PricingBar/PricingBar";
+import TeamBar from "../TeamBar/TeamBar";
 
 const HomeScreen = () => {
   return (
@@ -14,6 +15,7 @@ const HomeScreen = () => {
       <ProcessHolder />
       <BenefitsBar />
       <PricingBar />
+      <TeamBar />
     </div>
   );
 };
