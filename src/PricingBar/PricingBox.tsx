@@ -1,6 +1,7 @@
 import React from "react";
 import "./Pricing.css";
 import { PriceItem } from "../Copy/pricing";
+import Button from "../Common/Button/Button";
 export interface PricingBoxProps {
   item: PriceItem;
 }
@@ -21,7 +22,19 @@ export const PricingBox = (props: PricingBoxProps) => {
           return <li>{item}</li>;
         })}
       </ul>
-      <footer></footer>
+      <footer>
+        <Button
+          variant="outlined"
+          styleOverride={{
+            backgroundColor: accentColor,
+            padding: "8px 16px",
+            fontWeight: "500",
+            color: "white",
+          }}
+        >
+          Schedule a Demo
+        </Button>
+      </footer>
     </div>
   );
 };
