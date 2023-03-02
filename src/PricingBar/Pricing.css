@@ -1,0 +1,25 @@
+.PricingBox {
+  width: 25%;
+  background-color: white;
+  border: 2px solid grey;
+  min-height: 30vh;
+  border-radius: 5px;
+  margin: auto 0.5em;
+}
+.PricingBox li {
+  text-align: left;
+}
+.PricingBox header {
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 100%;
+}
+.PricingBox h2 {
+  margin-top: 1%;
+  font-size: 3.5rem;
+}
+.PricingBox h3 {
+  margin-bottom: 1%;
+}

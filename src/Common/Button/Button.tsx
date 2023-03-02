@@ -22,7 +22,8 @@ const ThemedButton = (props: PropsWithChildren<ButtonProps>) => {
   };
 
   if (props.active) {
-    baseStyle.backgroundColor = grey[200];
+    baseStyle.backgroundColor = "#83946A";
+    baseStyle.color = "white";
   }
   return (
     <Button
