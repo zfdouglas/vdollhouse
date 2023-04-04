@@ -19,13 +19,13 @@ export const team: TeamItem[] = [
     picture: DEFAULT,
   },
   {
-    name: "Zack",
-    position: "Head of Technology",
-    picture: ZFD,
-  },
-  {
     name: "Zhiyang",
     position: "Software Architect",
     picture: DEFAULT,
+  },
+  {
+    name: "Zack",
+    position: "Technology Manager",
+    picture: ZFD,
   },
 ];

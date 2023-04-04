@@ -50,7 +50,7 @@ const BenefitsBar = () => {
       </div>
 
       <Paper elevation={0} variant="outlined" className="BenefitText">
-        <p style={{ textAlign: "left", padding: "4%" }}>
+        <p style={{ textAlign: "left", padding: "3%" }}>
           {chosenBenefit.content}
         </p>
       </Paper>

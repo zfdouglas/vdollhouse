@@ -38,12 +38,13 @@
   }
   .HiringButtonBox {
     display: flex;
-    color: rgb(100, 68, 20);
+    color: #966b16;
     flex-wrap: wrap;
     width: 100%;
     height: 25vh;
   }
   .HiringButtonBox h1 {
     display: flex;
+    margin-right: 2%;
   }
 }

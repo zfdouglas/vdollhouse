@@ -9,7 +9,10 @@ export const MemberCard = (props: MemberCardProps) => {
   const { name, picture, position } = props.member;
   return (
     <div className="MemberCard">
-      <img src={picture} style={{ width: "50%", borderRadius: "100%" }} />
+      <img
+        src={picture}
+        style={{ height: "20vh", width: "20vh", borderRadius: "100%" }}
+      />
       <h2>{name}</h2>
       <h4>{position}</h4>
     </div>
