@@ -20,7 +20,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <BrowserRouter basename="/vdollhouse">
+        <BrowserRouter>
           <NavBar />
           <Routes>
             <Route path="/" element={<HomeScreen />} />
