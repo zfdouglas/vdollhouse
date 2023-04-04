@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c8b236d73474ba7d2b68",
+    "revision": "932fd234f39d723a3f02",
     "url": "/vdollhouse/static/css/main.1822eaef.chunk.css"
   },
   {
-    "revision": "c8b236d73474ba7d2b68",
-    "url": "/vdollhouse/static/js/main.3e81f1b9.chunk.js"
+    "revision": "932fd234f39d723a3f02",
+    "url": "/vdollhouse/static/js/main.d3c3bd31.chunk.js"
   },
   {
     "revision": "46c8ad0f43a90684a12c",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/vdollhouse/static/media/wood.16b82e6b.jpg"
   },
   {
-    "revision": "3d1de70a114b05b38fd1ac5ebe5f07a7",
+    "revision": "50ab0aa3e7d54c32056dedfdd648f8e0",
     "url": "/vdollhouse/index.html"
   }
 ];
