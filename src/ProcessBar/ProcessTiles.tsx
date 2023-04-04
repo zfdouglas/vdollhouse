@@ -2,31 +2,34 @@ import { CardContent, CardMedia, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import React from "react";
 import theme from "../Common/ThemeProvider";
-
+import "./Process.css";
 interface ProcessTileProps {
   process: string;
   image: JSX.Element;
-  blurb: string;
+  blurb: JSX.Element;
 }
 const ProcessTile = ({ process, image, blurb }: ProcessTileProps) => {
   return (
     <Card
       elevation={1}
       sx={{
-        width: { xs: "60%", sm: "17%" },
+        width: { xs: "80%", lg: "17%" },
         marginTop: "1em",
       }}
     >
       <CardContent>
         <Typography
-          variant="h5"
           component="div"
           color={theme.palette.primary.main}
           gutterBottom
         >
-          {process}
+          <p className="ProcessTitle">{process}</p>
         </Typography>
-        <CardMedia sx={{ height: "60%" }} title={process}>
+        <CardMedia
+          className="ProcessIcon"
+          sx={{ height: "8vh" }}
+          title={process}
+        >
           {image}
         </CardMedia>
         <div>{blurb}</div>

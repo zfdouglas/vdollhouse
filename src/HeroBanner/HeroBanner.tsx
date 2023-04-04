@@ -5,16 +5,22 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import InteriorShot from "../Common/assets/interior.jpg";
 
-const HeroBanner = () => {
+interface HeroBannerProps {
+  backgroundImage?: string;
+  height?: string;
+}
+const HeroBanner = (props: HeroBannerProps) => {
   const paperStyling = {
     position: "relative",
     color: "#fff",
     mb: 4,
-    height: "66vh",
+    height: props.height ? props.height : "66vh",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    backgroundImage: `url(${InteriorShot})`,
+    backgroundImage: props.backgroundImage
+      ? `url(${props.backgroundImage})`
+      : `url(${InteriorShot})`,
   };
 
   const heroBoxStyling = {

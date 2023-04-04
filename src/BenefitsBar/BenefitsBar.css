@@ -1,0 +1,39 @@
+.benefitDropdownSelector {
+  display: none;
+}
+
+.benefitButtonSelector {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.BenefitText {
+  height: 40vh;
+  background-color: none;
+  width: 60%;
+  margin: 1% auto;
+  min-height: 25vh;
+}
+
+@media (max-width: 1040px) {
+  .benefitDropdownSelector {
+    display: flex;
+    margin: auto;
+    margin-bottom: 3vh;
+    max-width: 80%;
+    flex-direction: column-reverse;
+  }
+  .benefitButtonSelector {
+    display: none;
+  }
+  .BenefitText {
+    height: 50vh;
+    width: 90vw;
+  }
+}
+@media (max-width: 480px) {
+}

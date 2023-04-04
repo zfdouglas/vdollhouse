@@ -4,9 +4,6 @@ import AppBar from "@mui/material/AppBar/AppBar";
 import Box from "@mui/material/Box/Box";
 import Container from "@mui/material/Container/Container";
 import IconButton from "@mui/material/IconButton/IconButton";
-import Menu from "@mui/material/Menu/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import MenuItem from "@mui/material/MenuItem/MenuItem";
 import Toolbar from "@mui/material/Toolbar/Toolbar";
 import Typography from "@mui/material/Typography/Typography";
 import { NavLink } from "react-router-dom";
@@ -22,8 +19,11 @@ const NavBar = () => {
   let activeClassName = "nav-active";
   const pages = [
     { name: "Home", url: "" },
-    { name: "About", url: "about" },
-    { name: "Contact", url: "contact" },
+    { name: "Media", url: "media" },
+    { name: "Support", url: "support" },
+    { name: "Scan QR", url: "qr" },
+    { name: "Work with Dollhouse", url: "portal" },
+    { name: "Login", url: "login" },
   ];
 
   return (
@@ -41,7 +41,7 @@ const NavBar = () => {
           disableGutters
           style={{ display: "flex", justifyContent: "space-between" }}
         >
-          <div>
+          <div style={{ display: "flex", alignItems: "center" }}>
             <IconButton edge="start">
               <img src={logo} style={{ height: "2em", margin: ".2em" }} />
             </IconButton>

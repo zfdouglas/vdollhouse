@@ -2,25 +2,18 @@ import React from "react";
 import ProcessTile from "./ProcessTiles";
 
 import theme from "../Common/ThemeProvider";
-import { processes } from "../Copy/processes";
+import "./Process.css";
+import { Process, processes } from "../Copy/processes";
 import { ContentBar } from "../Common/Blocks/ContentBar";
 
 const ProcessHolder = () => {
   return (
     <ContentBar
-      header="The Process"
+      header="THE PROCESS"
       headerColor={theme.palette.primary.main}
       backgroundColor="none"
     >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          margin: "auto",
-          justifyContent: "space-evenly",
-          flexWrap: "wrap",
-        }}
-      >
+      <div className="ProcessTile">
         {processes.map((step) => {
           return (
             <ProcessTile

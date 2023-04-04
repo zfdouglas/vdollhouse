@@ -1,0 +1,14 @@
+.ProcessIcon svg {
+  font-size: 4em;
+}
+.ProcessTitle {
+  font-weight: 600;
+  height: 4vh;
+}
+.ProcessTile {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
