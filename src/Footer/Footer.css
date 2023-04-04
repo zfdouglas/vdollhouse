@@ -1,0 +1,10 @@
+.Footer {
+  margin-top: auto;
+  color: rgb(135, 126, 126);
+  font-size: smaller;
+  background-color: white;
+}
+.Footer div {
+  margin-top: 2%;
+  margin-bottom: 1%;
+}

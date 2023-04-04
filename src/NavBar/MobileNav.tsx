@@ -7,12 +7,8 @@ import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
 import theme from "../Common/ThemeProvider";
 import React from "react";
+import { DropdownMenu } from "./DropdownMenu";
 
-const pages = [
-  { name: "Home", url: "" },
-  { name: "About", url: "about" },
-  { name: "Contact", url: "contact" },
-];
 const MobileNav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -32,11 +28,14 @@ const MobileNav = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+      }}
+    >
       <NavItem url={"/"} isActive={true}>
         <Typography
           variant="h6"
@@ -65,42 +64,11 @@ const MobileNav = () => {
           onClick={handleOpenNavMenu}
           color="primary"
         >
-          <MenuIcon style={{ color: "white" }} />
+          <MenuIcon style={{ color: "white", paddingLeft: "32px" }} />
         </IconButton>
-        <Menu
-          id="menu-appbar"
-          anchorEl={anchorElNav}
-          variant="menu"
-          anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "left",
-          }}
-          keepMounted
-          transformOrigin={{
-            vertical: "top",
-            horizontal: "left",
-          }}
-          open={Boolean(anchorElNav)}
-          onClose={handleCloseNavMenu}
-          sx={{
-            display: { xs: "block", md: "none" },
-          }}
-        >
-          {pages.map((page) => (
-            <NavItem url={page.url} isActive={true}>
-              <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                <Typography
-                  style={{ color: theme.palette.primary.main }}
-                  textAlign="center"
-                >
-                  {page.url}
-                </Typography>
-              </MenuItem>
-            </NavItem>
-          ))}
-        </Menu>
+        <DropdownMenu anchor={anchorElNav} onClose={handleCloseNavMenu} />
       </Box>
-    </>
+    </div>
   );
 };
 export default MobileNav;

@@ -5,6 +5,8 @@ import ProcessHolder from "../ProcessBar/ProcessHolder";
 import BenefitsBar from "../BenefitsBar/BenefitsBar";
 import { PricingBar } from "../PricingBar/PricingBar";
 import TeamBar from "../TeamBar/TeamBar";
+import { DemoBar } from "../DemoBar/DemoBar";
+import { HiringBar } from "../HiringBar/HiringBar";
 
 const HomeScreen = () => {
   return (
@@ -16,6 +18,8 @@ const HomeScreen = () => {
       <BenefitsBar />
       <PricingBar />
       <TeamBar />
+      <HiringBar />
+      <DemoBar />
     </div>
   );
 };

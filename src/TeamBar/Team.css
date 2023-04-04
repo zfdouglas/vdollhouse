@@ -5,3 +5,24 @@
 .MemberCard h2 {
   margin-bottom: 0;
 }
+.MemberHolder {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .MemberCard img {
+    width: 80%;
+  }
+  .MemberCard h2 {
+    transform: scale(0.7);
+    margin-top: 0;
+  }
+  .MemberCard h4 {
+    transform: scale(0.7);
+    margin-top: 0;
+  }
+}

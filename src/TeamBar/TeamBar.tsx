@@ -3,22 +3,11 @@ import { ContentBar } from "../Common/Blocks/ContentBar";
 import theme from "../Common/ThemeProvider";
 import { team } from "../Copy/team";
 import { MemberCard } from "./MemberCard";
+import grey from "../Common/assets/grey.jpg";
 const TeamBar = () => {
   return (
-    <ContentBar
-      header="Meet The Dollhouse Team"
-      headerColor="white"
-      backgroundColor={theme.palette.primary.main}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          margin: "auto",
-          justifyContent: "space-evenly",
-          flexWrap: "wrap",
-        }}
-      >
+    <ContentBar header="THE TEAM" headerColor="white" backgroundImage={grey}>
+      <div className="MemberHolder">
         {team.map((member) => {
           return <MemberCard member={member} />;
         })}

@@ -1,0 +1,36 @@
+.DemoBar {
+  background-color: #a1bd69;
+  display: flex;
+  flex-direction: row;
+  height: 35vh;
+  flex-wrap: wrap;
+}
+.DemoButtonBox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Common/assets/wood.jpg");
+}
+.DemoDescriptionBox {
+  width: 50%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .DemoButtonBox {
+    width: 100%;
+    height: 17vh;
+  }
+  .DemoDescriptionBox {
+    width: 100%;
+    height: 17vh;
+  }
+}

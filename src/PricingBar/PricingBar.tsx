@@ -4,12 +4,17 @@ import { PricingBox } from "./PricingBox";
 import { pricing } from "../Copy/pricing";
 export const PricingBar = () => {
   return (
-    <ContentBar header="Pricing" headerColor="#A1BD69" backgroundColor="white">
+    <ContentBar
+      header="THE PRICING"
+      headerColor="#A1BD69"
+      backgroundColor="white"
+    >
       <div
         style={{
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
+          flexWrap: "wrap",
         }}
       >
         {pricing.map((priceItem) => {
