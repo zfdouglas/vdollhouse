@@ -1,10 +1,40 @@
 .Footer {
   margin-top: auto;
   color: rgb(135, 126, 126);
+  background-color: rgb(183, 220, 120);
   font-size: smaller;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-.Footer div {
+
+.FooterContent a {
+  text-decoration: none;
+  color: green;
+}
+.FooterContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.FooterContent div {
   margin-top: 2%;
   margin-bottom: 1%;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FooterContent h5 {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+.FooterContent div p {
+  width: 40%;
+  text-align: left;
+}
+
+.FooterContent:nth-child(1) {
+  background-color: white;
 }
