@@ -1,5 +1,5 @@
 {
-  "main.css": "/vdollhouse/static/css/main.1822eaef.chunk.css",
+  "main.css": "/vdollhouse/static/css/main.b77d7f06.chunk.css",
   "main.js": "/vdollhouse/static/js/main.a12e849a.chunk.js",
   "main.js.map": "/vdollhouse/static/js/main.a12e849a.chunk.js.map",
   "runtime~main.js": "/vdollhouse/static/js/runtime~main.454c8ba0.js",
@@ -9,9 +9,9 @@
   "static/js/3.4e3714ee.chunk.js": "/vdollhouse/static/js/3.4e3714ee.chunk.js",
   "static/js/3.4e3714ee.chunk.js.map": "/vdollhouse/static/js/3.4e3714ee.chunk.js.map",
   "index.html": "/vdollhouse/index.html",
-  "precache-manifest.e13ab3ffded0fb6f6fe5a3f8ba43520f.js": "/vdollhouse/precache-manifest.e13ab3ffded0fb6f6fe5a3f8ba43520f.js",
+  "precache-manifest.c6e6266f84995623c7455419bdcac05d.js": "/vdollhouse/precache-manifest.c6e6266f84995623c7455419bdcac05d.js",
   "service-worker.js": "/vdollhouse/service-worker.js",
-  "static/css/main.1822eaef.chunk.css.map": "/vdollhouse/static/css/main.1822eaef.chunk.css.map",
+  "static/css/main.b77d7f06.chunk.css.map": "/vdollhouse/static/css/main.b77d7f06.chunk.css.map",
   "static/media/TeamPlaceholder.jpg": "/vdollhouse/static/media/TeamPlaceholder.138d1ebe.jpg",
   "static/media/green2.jpg": "/vdollhouse/static/media/green2.aee7850d.jpg",
   "static/media/grey.jpg": "/vdollhouse/static/media/grey.b12f7168.jpg",
