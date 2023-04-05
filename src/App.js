@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import NavBar from "./NavBar/NavBar";
 import { ThemeProvider } from "@mui/material";
 import theme from "./Common/ThemeProvider";
@@ -13,14 +13,13 @@ import SupportScreen from "./screens/SupportScreen";
 import QRScreen from "./screens/QRScreen";
 import PortalScreen from "./screens/PortalScreen";
 import LoginScreen from "./screens/LoginScreen";
+import ErrorScreen from "./screens/ErrorScreen";
 function App() {
-  const Error = () => {
-    return <h1>Error</h1>;
-  };
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <BrowserRouter>
+        {/* Change back to browserouter once moving to AWS */}
+        <HashRouter>
           <NavBar />
           <Routes>
             <Route path="/" element={<HomeScreen />} />
@@ -30,10 +29,10 @@ function App() {
             <Route path="portal" element={<PortalScreen />} />
             <Route path="login" element={<LoginScreen />} />
 
-            <Route path="*" element={<Error />} />
+            <Route path="*" element={<ErrorScreen />} />
           </Routes>
           <Footer />
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </ThemeProvider>
   );
