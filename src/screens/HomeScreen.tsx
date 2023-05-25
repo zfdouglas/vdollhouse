@@ -7,13 +7,14 @@ import { PricingBar } from "../PricingBar/PricingBar";
 import TeamBar from "../TeamBar/TeamBar";
 import { DemoBar } from "../DemoBar/DemoBar";
 import { HiringBar } from "../HiringBar/HiringBar";
+import { CallToActionButton } from "../Common/Blocks/Buttons";
 
 const HomeScreen = () => {
   return (
     <div>
-      <div>
-        <HeroBanner />
-      </div>
+      <HeroBanner>
+        <CallToActionButton>Keep Up to Date with Dollhouse</CallToActionButton>
+      </HeroBanner>
       <ProcessHolder />
       <BenefitsBar />
       <PricingBar />

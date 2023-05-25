@@ -4,21 +4,13 @@ import NavItem from "./NavItem";
 import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
 import theme from "../Common/ThemeProvider";
+import { pages } from "../Copy/nav";
 
 interface DropdownMenuProps {
   anchor: HTMLElement | null;
   onClose: () => void;
 }
 export const DropdownMenu = (props: DropdownMenuProps) => {
-  const pages = [
-    { name: "Home", url: "" },
-    { name: "Media", url: "media" },
-    { name: "Support", url: "suport" },
-    { name: "Scan QR", url: "qr" },
-    { name: "Work with Dollhouse", url: "portal" },
-    { name: "Login", url: "login" },
-  ];
-
   return (
     <Menu
       id="menu-appbar"
