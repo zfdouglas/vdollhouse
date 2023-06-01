@@ -1,11 +1,20 @@
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
+import Button from "@mui/material/Button";
+import theme from "../ThemeProvider";
 
 export const CallToActionButton = styled.button`
+  display: flex;
+  align-items: center;
   background-color: white;
-  padding: 8px 16px;
+  color: ${theme.palette.primary.main};
+  font-size: 0.9rem;
   font-weight: 600;
-  color: #a1bd69;
+  padding: 0.8rem;
+  text-align: center;
   border-radius: 5px;
   border: 0px solid;
-  height: 8vh;
+  &:hover {
+    background-color: ${theme.palette.grey[100]};
+    cursor: pointer;
+  }
 `;

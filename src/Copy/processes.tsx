@@ -12,18 +12,28 @@ export interface Process {
 }
 export const processes: Process[] = [
   {
-    process: "Step 1: Establish Digital Twin",
+    process: "Step 1: Create your virtual Dollhouse",
     image: <ComputerIcon color="secondary" fontSize="large" />,
     blurb: (
-      <div>
-        <p>
-          Decorate your home, listed property, or home-to-be with your furniture
-          to imagine or show off what it could look like living there.
-        </p>
-        <p>
-          Want to list your property as a relator but don't have the equipment?
-          Use our app or try Matterport Capture Services
-        </p>
+      <div style={{ textAlign: "left" }}>
+        <ul>
+          <li>
+            A virtual Dollhouse is a digital twin or 3d model of your home,
+            listed property, or home-to-be, that you can place 3d models of
+            furniture in.
+          </li>
+          <li>
+            Realtors can list existing Matterport digital twins (or 3D models)
+            of their listings in vDollhouse. Realtors that haven’t created a
+            digital twin of their listing can simply use the Matterport Capture
+            app or Matterport Capture Services.
+          </li>
+          <li>
+            Home decorators can create a free digital twin of their home using
+            the Matterport Capture App, or can access a realtor’s existing
+            digital twin.
+          </li>
+        </ul>
       </div>
     ),
   },

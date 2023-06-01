@@ -26,9 +26,7 @@ const HeroBanner = (props: HeroBannerProps) => {
 
   return (
     <Paper sx={paperStyling}>
-      <Grid container height="100%">
-        {props.children}
-      </Grid>
+      <Grid container>{props.children}</Grid>
     </Paper>
   );
 };
