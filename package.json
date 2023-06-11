@@ -28,7 +28,7 @@
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "SET NODE_OPTIONS=--openssl-legacy-provider build"
+    "deploy": "react-scripts --openssl-legacy-provider build"
   },
   "eslintConfig": {
     "extends": [
