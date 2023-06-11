@@ -6,25 +6,17 @@ export const benefits = [
       <div>
         <p>
           Put yourself in the shoes (or chair!) of living in a house or
-          apartment before you sign or move in. Benefits of doing so include:
+          apartment before you sign or move in. This includes:
         </p>
         <ul>
           <li>Bringing a potential-home to life.</li>
           <li>
-            Planning how you and your new roommate/signficant other will
-            consolidate your decor into a single space.
+            Planning how you and your roommate/signficant other will consolidate
+            your decor into a single space.
           </li>
           <li>Understanding if there is enough space for your decor.</li>
           <li>
-            Click <a>here</a> to use our tool to determine if your new decor
-            will fit through doors, walls, corners, and more.
-          </li>
-          <li>
             Playing with how you'll decorate your new home before moving in.
-          </li>
-          <li>
-            Click <a>here</a> to search only for apartments with digital twins
-            on Dollhouse.
           </li>
         </ul>
       </div>
@@ -35,14 +27,14 @@ export const benefits = [
     content: (
       <div>
         <p>
-          Before you buy something or go through the effort of re-arranging, see
-          what your house would be like with the new arrangement or piece.
+          Before you buy an item or go through the effort of re-arranging, see
+          what your house would look like with a new arrangement or piece.
           Benefits of doing so include:
         </p>
         <ul>
           <li>
-            Save time, energy, and injuries by virtually moving your potential
-            decor around your home beforehand.
+            Save time and energy by virtually moving your potential decor around
+            your home beforehand.
           </li>
           <li>See if prospective furniture fits in a spot in your home.</li>
           <li>
@@ -62,19 +54,14 @@ export const benefits = [
     content: (
       <div>
         <p>
-          Help your potential buyers/renteres see what it'd be like to live in
-          your homes/apartments like never before by allowing them to place
-          their decor, and their lives, in the context of your space. Benefits
-          of doing so include:
+          Bring your potential buyers’ imagination to life of what it’d be like
+          for them to live in your listing before signing. Benefits of doing so
+          include:
         </p>
         <ul>
           <li>
-            Turn your listing into a digital twin, either by yourself or with
-            help from Matterport Capture Services.
-          </li>
-          <li>
-            Give potential buyers/renters the opportunity to feel at home in
-            your property.
+            Give potential buyers/renters the opportunity to see themselves at
+            home in their future property.
           </li>
           <li>
             Clear your properties of the decor of the current tenants, and stage
