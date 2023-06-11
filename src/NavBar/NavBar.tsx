@@ -8,40 +8,30 @@ import Toolbar from "@mui/material/Toolbar/Toolbar";
 import Typography from "@mui/material/Typography/Typography";
 import { NavLink } from "react-router-dom";
 import Button from "@mui/material/Button/Button";
-import NavItem from "./NavItem";
-import logo from "../Common/assets/logogreen.png";
+import logo from "../Common/assets/logowhite.png";
 import theme from "../Common/ThemeProvider";
 import "./NavBar.css";
 import Grid from "@mui/material/Grid";
 import MobileNav from "./MobileNav";
+import { pages } from "../Copy/nav";
 
 const NavBar = () => {
   let activeClassName = "nav-active";
-  const pages = [
-    { name: "Home", url: "" },
-    { name: "Media", url: "media" },
-    { name: "Support", url: "support" },
-    { name: "Scan QR", url: "qr" },
-    { name: "Work with Dollhouse", url: "portal" },
-    { name: "Login", url: "login" },
-  ];
 
   return (
     <AppBar
+      position="sticky"
       style={{
-        backgroundColor: "transparent",
-        position: "absolute",
-        zIndex: "10",
+        backgroundColor: theme.palette.secondary.main,
         boxShadow: "none",
       }}
-      position="static"
     >
       <Container maxWidth="xl">
         <Toolbar
           disableGutters
           style={{ display: "flex", justifyContent: "space-between" }}
         >
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div style={{ display: "flex", alignItems: "baseline" }}>
             <IconButton edge="start">
               <img src={logo} style={{ height: "2em", margin: ".2em" }} />
             </IconButton>
