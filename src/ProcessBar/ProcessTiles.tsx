@@ -27,7 +27,7 @@ const ProcessTile = ({ process, image, blurb }: ProcessTileProps) => {
         </Typography>
         <CardMedia
           className="ProcessIcon"
-          sx={{ height: "8vh" }}
+          sx={{ height: "8vh", marginBottom: "4vh" }}
           title={process}
         >
           {image}

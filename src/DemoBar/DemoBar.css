@@ -25,12 +25,18 @@
 }
 
 @media (max-width: 800px) {
+  .DemoBar {
+    height: 40vh;
+  }
   .DemoButtonBox {
     width: 100%;
-    height: 17vh;
+    height: 20vh;
   }
   .DemoDescriptionBox {
     width: 100%;
-    height: 17vh;
+    height: 20vh;
+  }
+  .DemoDescriptionBox h3 {
+    font-size: smaller;
   }
 }

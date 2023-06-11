@@ -3,7 +3,7 @@ import ProcessTile from "./ProcessTiles";
 
 import theme from "../Common/ThemeProvider";
 import "./Process.css";
-import { Process, processes } from "../Copy/processes";
+import { processes } from "../Copy/processes";
 import { ContentBar } from "../Common/Blocks/ContentBar";
 
 const ProcessHolder = () => {

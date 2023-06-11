@@ -29,7 +29,7 @@
 }
 @media (max-width: 800px) {
   .HiringBar {
-    height: 25vh;
+    height: 30vh;
   }
   .HiringDescriptionBox {
     width: 100%;
@@ -38,10 +38,10 @@
   }
   .HiringButtonBox {
     display: flex;
-    color: #966b16;
+    color: #95a598;
     flex-wrap: wrap;
     width: 100%;
-    height: 25vh;
+    height: 30vh;
   }
   .HiringButtonBox h1 {
     display: flex;
