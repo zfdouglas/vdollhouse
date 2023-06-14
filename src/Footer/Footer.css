@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: auto;
 }
 .FooterContent div {
   margin-top: 2%;
