@@ -1,14 +1,17 @@
 import { CardContent, CardMedia, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import theme from "../Common/ThemeProvider";
 import "./Process.css";
+import { ExpandButton } from "../Common/Blocks/Buttons";
 interface ProcessTileProps {
   process: string;
   image: JSX.Element;
   blurb: JSX.Element;
 }
 const ProcessTile = ({ process, image, blurb }: ProcessTileProps) => {
+  const [isClicked, setIsClicked] = useState(false);
+
   return (
     <Card
       elevation={1}
@@ -32,7 +35,23 @@ const ProcessTile = ({ process, image, blurb }: ProcessTileProps) => {
         >
           {image}
         </CardMedia>
-        <div>{blurb}</div>
+        <div
+          style={{
+            display: "flex",
+            color: "gray",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Learn More
+          <ExpandButton
+            color="primary"
+            fontSize="large"
+            transform={isClicked ? "rotate(0)" : "rotate(-90deg)"}
+            onClick={() => setIsClicked(!isClicked)}
+          />
+        </div>
+        <div hidden={!isClicked}>{blurb}</div>
       </CardContent>
     </Card>
   );
