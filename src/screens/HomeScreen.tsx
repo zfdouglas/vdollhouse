@@ -10,8 +10,14 @@ import { DemoBar } from "../DemoBar/DemoBar";
 import { HiringBar } from "../HiringBar/HiringBar";
 import { CallToActionButton } from "../Common/Blocks/Buttons";
 import { Heading1, Heading3 } from "../Common/Blocks/Headings";
+import { useNavigate } from "react-router-dom";
 
 const HomeScreen = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/prereg");
+  };
   return (
     <div>
       <HeroBanner>
@@ -29,7 +35,7 @@ const HomeScreen = () => {
               flexDirection: "row-reverse",
             }}
           >
-            <CallToActionButton style={{ margin: "3%" }}>
+            <CallToActionButton style={{ margin: "3%" }} onClick={handleClick}>
               <CampaignIcon />
               &nbsp; Keep Up to Date with Dollhouse
             </CallToActionButton>
