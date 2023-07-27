@@ -12,6 +12,7 @@ import QRScreen from "./screens/QRScreen";
 import PortalScreen from "./screens/PortalScreen";
 import LoginScreen from "./screens/LoginScreen";
 import ErrorScreen from "./screens/ErrorScreen";
+import PreRegistrationScreen from "./screens/PreRegistrationScreen";
 import ContactScreen from "./screens/ContactScreen";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="qr" element={<QRScreen />} />
             <Route path="portal" element={<PortalScreen />} />
             <Route path="login" element={<LoginScreen />} />
+            <Route path="prereg" element={<PreRegistrationScreen />} />
             <Route path="contact" element={<ContactScreen />} />
 
             <Route path="*" element={<ErrorScreen />} />
