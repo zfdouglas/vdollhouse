@@ -1,16 +1,14 @@
 import React from "react";
 import "../HeroBanner/HeroBanner.css";
-import CampaignIcon from "@mui/icons-material/Campaign";
 import HeroBanner from "../HeroBanner/HeroBanner";
 import ProcessHolder from "../ProcessBar/ProcessHolder";
 import BenefitsBar from "../BenefitsBar/BenefitsBar";
 import { PricingBar } from "../PricingBar/PricingBar";
 import TeamBar from "../TeamBar/TeamBar";
-import { DemoBar } from "../DemoBar/DemoBar";
-import { HiringBar } from "../HiringBar/HiringBar";
-import { CallToActionButton } from "../Common/Blocks/Buttons";
+import { ContactUsButton } from "../Common/Blocks/Buttons";
 import { Heading1, Heading3 } from "../Common/Blocks/Headings";
 import { useNavigate } from "react-router-dom";
+import { PricingBoxMultitab } from "../PricingBar/PricingBoxMultitab";
 
 const HomeScreen = () => {
   const navigate = useNavigate();
@@ -35,10 +33,7 @@ const HomeScreen = () => {
               flexDirection: "row-reverse",
             }}
           >
-            <CallToActionButton style={{ margin: "3%" }} onClick={handleClick}>
-              <CampaignIcon />
-              &nbsp; Keep Up to Date with Dollhouse
-            </CallToActionButton>
+            <ContactUsButton />
           </div>
           <div className="HeroHeadings">
             <Heading1>See your home in a new way</Heading1>
@@ -48,10 +43,9 @@ const HomeScreen = () => {
       </HeroBanner>
       <ProcessHolder />
       <BenefitsBar />
+      <PricingBoxMultitab />
       <PricingBar />
       <TeamBar />
-      <HiringBar />
-      <DemoBar />
     </div>
   );
 };

@@ -9,23 +9,28 @@ export interface TeamItem {
 }
 export const team: TeamItem[] = [
   {
-    name: "Kyle",
+    name: "Kyle Compton",
     position: "CEO and President",
     picture: DEFAULT,
   },
   {
-    name: "Connor",
+    name: "Connor Treacy",
     position: "Chief Financial Officer",
     picture: DEFAULT,
   },
   {
-    name: "Zhiyang",
-    position: "Software Architect",
+    name: "Zhiyang Fu",
+    position: "3D Engineering Manager",
     picture: DEFAULT,
   },
   {
-    name: "Zack",
-    position: "Technology Manager",
+    name: "Zack Douglas",
+    position: "Senior Software Engineer",
     picture: ZFD,
+  },
+  {
+    name: "Rachel Johnson-Slade",
+    position: "Marketing",
+    picture: DEFAULT,
   },
 ];

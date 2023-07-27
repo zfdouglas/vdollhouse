@@ -6,9 +6,9 @@ export const Footer = () => {
       <div className="FooterContent">
         <div>
           <h5>Contact</h5>
-          <p>service@vdollhouse.com</p>
-          <p>address</p>
-          <p>phone number</p>
+          <p>contact@vdollhouse.com</p>
+          <p>1 Victoria Street, Somerville, MA 02144</p>
+          <p>781-424-4151</p>
         </div>
         <div>
           <h5>About</h5>
@@ -51,16 +51,8 @@ export const Footer = () => {
         </div>
       </div>
       <div className="FooterContent">
-        <div>
-          <a href="mailto:service@vdollhouse.com?subject=Question">
-            Contact Us
-          </a>
-        </div>
-        <div>Copyright 2023 vDollhouse LLC</div>
-        <div>
-          <a href="mailto:service@vdollhouse.com?subject=Demo Request">
-            Request a Demo
-          </a>
+        <div style={{ width: "100%", textAlign: "center" }}>
+          Copyright 2023 vDollhouse, Inc
         </div>
       </div>
     </footer>
