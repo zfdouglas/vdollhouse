@@ -19,6 +19,7 @@ export interface ComplexPriceGroup {
     noPrice?: string;
   };
   specialData?: React.ReactElement;
+  buttonNav: string;
   buttonName?: string;
   headerColor: string;
   accentColor: string;
@@ -49,6 +50,7 @@ export const realEstateProPricing: ComplexPriceGroup[] = [
     },
     headerColor: "white",
     accentColor: "rgb(66, 94, 72)",
+    buttonNav: "prereg",
   },
   {
     displayName: "Professional",
@@ -93,6 +95,7 @@ export const realEstateProPricing: ComplexPriceGroup[] = [
     },
     headerColor: "white",
     accentColor: "rgb(66, 94, 72)",
+    buttonNav: "prereg",
   },
   {
     displayName: "Professional Plus",
@@ -137,6 +140,7 @@ export const realEstateProPricing: ComplexPriceGroup[] = [
     },
     headerColor: "white",
     accentColor: "rgb(66, 94, 72)",
+    buttonNav: "prereg",
   },
   {
     displayName: "Business",
@@ -182,6 +186,7 @@ export const realEstateProPricing: ComplexPriceGroup[] = [
     },
     headerColor: "white",
     accentColor: "rgb(66, 94, 72)",
+    buttonNav: "prereg",
   },
   {
     displayName: "Business Plus",
@@ -227,6 +232,7 @@ export const realEstateProPricing: ComplexPriceGroup[] = [
     },
     headerColor: "white",
     accentColor: "rgb(66, 94, 72)",
+    buttonNav: "prereg",
   },
   {
     displayName: "Enterprise",
@@ -238,6 +244,7 @@ export const realEstateProPricing: ComplexPriceGroup[] = [
     headerColor: "white",
     accentColor: "rgb(66, 94, 72)",
     buttonName: "Contact Sales",
+    buttonNav: "prereg",
   },
 ];
 
@@ -252,6 +259,7 @@ export const freePricing: ComplexPriceGroup = {
   buttonName: "Get Started Free",
   headerColor: "white",
   accentColor: "#A1BD69",
+  buttonNav: "prereg",
 };
 
 export const decorMarketplace: ComplexPriceGroup = {
@@ -276,6 +284,7 @@ export const decorMarketplace: ComplexPriceGroup = {
     </div>
   ),
   buttonName: "Contact Sales",
+  buttonNav: "prereg",
   headerColor: "white",
   accentColor: "#A1BD69",
 };

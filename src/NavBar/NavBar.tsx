@@ -6,7 +6,7 @@ import Container from "@mui/material/Container/Container";
 import IconButton from "@mui/material/IconButton/IconButton";
 import Toolbar from "@mui/material/Toolbar/Toolbar";
 import Typography from "@mui/material/Typography/Typography";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Button from "@mui/material/Button/Button";
 import logo from "../Common/assets/logowhite.png";
 import theme from "../Common/ThemeProvider";
@@ -31,27 +31,28 @@ const NavBar = () => {
           disableGutters
           style={{ display: "flex", justifyContent: "space-between" }}
         >
-          <div style={{ display: "flex", alignItems: "baseline" }}>
-            <IconButton edge="start">
-              <img src={logo} style={{ height: "2em", margin: ".2em" }} />
-            </IconButton>
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href=""
-              sx={{
-                display: { xs: "none", md: "inline" },
-                flexGrow: 1,
-                fontWeight: 600,
-                letterSpacing: ".3rem",
-                color: "white",
-                textDecoration: "none",
-              }}
-            >
-              vDollhouse
-            </Typography>
-          </div>
+          <Link to={""} style={{ textDecoration: "none" }}>
+            <div style={{ display: "flex", alignItems: "baseline" }}>
+              <IconButton edge="start">
+                <img src={logo} style={{ height: "2em", margin: ".2em" }} />
+              </IconButton>
+              <Typography
+                variant="h5"
+                noWrap
+                component="a"
+                sx={{
+                  display: { xs: "none", md: "inline" },
+                  flexGrow: 1,
+                  fontWeight: 600,
+                  letterSpacing: ".3rem",
+                  color: "white",
+                  textDecoration: "none",
+                }}
+              >
+                vDollhouse
+              </Typography>
+            </div>
+          </Link>
           <MobileNav />
 
           <nav>
