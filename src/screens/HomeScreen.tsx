@@ -44,7 +44,6 @@ const HomeScreen = () => {
       <ProcessHolder />
       <BenefitsBar />
       <PricingBoxMultitab />
-      <PricingBar />
       <TeamBar />
     </div>
   );

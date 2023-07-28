@@ -9,6 +9,7 @@ import {
 import { PricingBox } from "./PricingBox";
 import { PricingContainer, PricingTagContainer } from "./Pricing";
 import { PricingTag } from "./PricingTag";
+import { ContentBar } from "../Common/Blocks/ContentBar";
 
 export const realEstateGroups = [
   "Free",
@@ -27,7 +28,11 @@ export const Groups = [
 export const PricingBoxMultitab = () => {
   const [chosenGroup, setChosenGroup] = useState(Groups[0]);
   return (
-    <>
+    <ContentBar
+      header="THE PRICING"
+      headerColor="#A1BD69"
+      backgroundColor="white"
+    >
       <PricingContainer>
         {Groups.map((group, index) => {
           return (
@@ -50,6 +55,6 @@ export const PricingBoxMultitab = () => {
           <PricingTag item={decorMarketplace} />
         ) : null}
       </PricingTagContainer>
-    </>
+    </ContentBar>
   );
 };

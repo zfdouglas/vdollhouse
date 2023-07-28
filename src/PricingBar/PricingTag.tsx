@@ -6,6 +6,7 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import ToggleButton from "@mui/material/ToggleButton";
 import { Costs } from "./Costs";
 import { PricingTagCard, PricingTagCardHeader } from "./Pricing";
+import { Link } from "react-router-dom";
 export interface PricingBoxProps {
   item: ComplexPriceGroup;
 }
@@ -19,6 +20,7 @@ export const PricingTag = (props: PricingBoxProps) => {
     headerColor,
     specialData,
     buttonName = "Schedule a Demo",
+    buttonNav,
   } = props.item;
 
   const [currentPriceGroup, setCurrentPriceGroup] = useState<string | null>(
@@ -86,17 +88,19 @@ export const PricingTag = (props: PricingBoxProps) => {
         {specialData && specialData}
       </div>
       <footer>
-        <Button
-          variant="outlined"
-          styleOverride={{
-            backgroundColor: accentColor,
-            padding: "8px 16px",
-            fontWeight: "500",
-            color: "white",
-          }}
-        >
-          {buttonName}
-        </Button>
+        <Link to={buttonNav}>
+          <Button
+            variant="outlined"
+            styleOverride={{
+              backgroundColor: accentColor,
+              padding: "8px 16px",
+              fontWeight: "500",
+              color: "white",
+            }}
+          >
+            {buttonName}
+          </Button>
+        </Link>
       </footer>
     </PricingTagCard>
   );

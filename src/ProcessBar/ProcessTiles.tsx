@@ -43,7 +43,7 @@ const ProcessTile = ({ process, image, blurb }: ProcessTileProps) => {
             alignItems: "center",
           }}
         >
-          Learn More
+          Learn More &nbsp; &nbsp;
           <ExpandButton
             color="primary"
             fontSize="large"
